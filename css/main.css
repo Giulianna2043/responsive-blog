@@ -10,21 +10,28 @@
     outline: 1px solid red;
 }
 
-@media screen and (max-width : 920px) {
-
-}
-
-@media screen and (max-width: 600px) {
-
-}
-
-img{
-    height: 200px;
+header{
+ background: black;   
 }
  .fila{
     float: left;
     background: black;
-    margin: 10px;
+    margin:20px 10px 20px 0px; 
+    
+}
+.imagenes-fila img{
+   height: 200px;
+    width: 290px;
+     
+}
+h1,h3{
+    text-align: center;
+    
+    color: darkorange;
+}
+p,h4{
+    color: white;
+    text-align: center;
     
 }
 
@@ -35,12 +42,23 @@ img{
     height: 500px;
     
 }
+
+.letras h1{
+    font-size: 50px;
+    
+}
+
 .letras{
+    width:500px;
+    height: 180px;
     background: black;
     text-align: center;
-    margin:50px 
-
+    position: relative;
+    top: 150px;
+    left: 170px;
+     
 }
+
 .clearfix
 {
 	display: table;
@@ -57,7 +75,7 @@ body
 {
 	padding: 0;
 	margin: 0;
-	font-family:  "open sans";
+	font-family: 'Courgette', cursive;
     
 }
 
@@ -79,6 +97,10 @@ header{
 	padding: 0;
    
 }
+.hero .list-menu{
+   text-align: center;
+   
+}
 .list-menu li
 {
 	display: inline-block;
@@ -90,12 +112,10 @@ header{
 	padding: 15px 10px;
 }
 ul li a{
-     color: black;
+     color: white;
      text-decoration: none;
 }
-p,h1,h3,button{
-    color: white;
-}
+
 
 section
 {
@@ -116,32 +136,27 @@ section
 
 .izquierda
 {
-	width: 60%;
+	width: 60%; background:#211F33; 
+}
     
-}
-.izquierda h1{
-    font-family: laton;
-    font-size: 50px;
-    
-}
-span{
-    color: blue;
-}
+
+
 .derecha
 {
 	width: 40%;
 }
-button
-{
-    background: RoyalBlue;
-    border: none;
+.block-form .about{
+    margin: 20px;
+	background: #211F33;
+	padding: 15px;
+	text-align: center;
 }
 
-.block-form
+.block-form .search
 {
 	margin: 20px;
 	background: #211F33;
-	padding: 15px;
+	padding: 10px;
 	text-align: center;
 }
 .block-form input, .block-form button
@@ -149,34 +164,52 @@ button
 	width: 100%;
 	box-sizing: border-box;
 }
-
-@media (max-width:900px)
-{
-	.container
-	{
-		width: 700px;
-	}
-}
-
-@media (max-width:700px)
-{
-	.container
-	{
-		width: 100%;
-	}
-	.izquierda , .derecha
-	{
-		width: 100%;
-	}
-	.block-form
-	{
-		margin: 0;
-	}
+.iconos i{
+    background: gray;
+    padding: 5px;
+    border-radius: 100%;   
 }
 
 footer
 {
- margin-left: 190px;
-color: darkgray;
+color: white;
+background: black;
+padding: 20px;
+text-align: center    
 }
+footer span{
+ color:grey;
+}
+
+@media screen and (max-width:920px){
+    .container{
+        width: 100%;
+    }
+    .hero{
+        width: 100%;
+    }
+    .imagenes-fila {
+        width: 100%;
+        margin: 0 auto;
+        clear: both;
+    }
+    .izquierda{
+     width: 50%;   
+    }
+    .fila{
+        height: 
+    }
+    i{
+        display: inline-block;
+    }
+    ul{
+        display: none;
+    }
+    .derecha{
+        display: none;
+    }
+    
+    
+}
+
 
