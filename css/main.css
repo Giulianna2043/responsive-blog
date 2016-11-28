@@ -1,54 +1,74 @@
-/* Inserta tu codigo aqui */
 
-/* Responsive */
-
-
-
-
-
-*{
-    outline: 1px solid red;
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courgette', cursive;
+    background: gray;
 }
 
-header{
- background: black;   
+header
+{
+    padding: 10px 0;
+    background: black;  
 }
- .fila{
-    float: left;
-    background: black;
-    margin:20px 10px 20px 0px; 
-    
+.container i{
+    display: none;
 }
-.imagenes-fila img{
-   height: 200px;
-    width: 290px;
-     
+.list-menu
+{
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
 }
-h1,h3{
-    text-align: center;
-    
-    color: darkorange;
+
+.list-menu li
+{
+    display: inline-block;
+   
 }
-p,h4{
+.list-menu li a
+{
+    display: block;
+    padding: 15px 10px;
     color: white;
-    text-align: center;
-    
+    text-decoration:none;
 }
 
-.fondoflor{
+.lista-menu li 
+{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    display: inline;
+}
+
+.hero .list-menu
+{
+   text-align: center;
+   
+}
+.fondoflor
+{
     background: url(../image/header-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
+    width: auto;
     
 }
 
-.letras h1{
+.letras h1
+{
     font-size: 50px;
     
 }
 
-.letras{
+.letras
+{
     width:500px;
     height: 180px;
     background: black;
@@ -58,158 +78,161 @@ p,h4{
     left: 170px;
      
 }
+ .fila
+ {
+    float: left;
+    background: black;
+    margin:20px 10px; 
+    
+}
+.imagenes-fila img{
+   height: 200px;
+    width: 280px;
+     
+}
+h1,h3
+{
+    text-align: center;
+    
+    color: darkorange;
+}
+p,h4
+{
+    color: white;
+    text-align: center;
+    
+}
+
+.container
+{
+    width: 900px;
+    margin: 0 auto;
+}
 
 .clearfix
 {
-	display: table;
+    display: table;
     
 }
-/* Tu CSS va aqui
-
-.clearfix .izquierda{
-    width: 300px;
-    
-} */
-
-body
-{
-	padding: 0;
-	margin: 0;
-	font-family: 'Courgette', cursive;
-    
-}
-
 .clearfix:after
 {
-	content:" ";
-	clear:both;
-}
-
-header{
-	padding: 10px 0;
-}
-
-.list-menu
-{
-	float: right;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-   
-}
-.hero .list-menu{
-   text-align: center;
-   
-}
-.list-menu li
-{
-	display: inline-block;
-   
-}
-.list-menu li a
-{
-	display: block;
-	padding: 15px 10px;
-}
-ul li a{
-     color: white;
-     text-decoration: none;
+    content:" ";
+    clear:both;
 }
 
 
-section
-{
-	background:gray;
-}
-.container
-{
-	width: 900px;
-	margin: 0 auto;
-}
+
+
 
 .izquierda , .derecha 
 {
-	float: left;
-	box-sizing: border-box;
-	padding: 10px;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .izquierda
 {
-	width: 60%; background:#211F33; 
+    width: 60%; 
+    background:#211F33; 
 }
-    
-
 
 .derecha
 {
-	width: 40%;
+    width: 40%;
 }
-.block-form .about{
-    margin: 20px;
-	background: #211F33;
-	padding: 15px;
-	text-align: center;
+.block-form .about
+{
+    margin: 10px;
+    background: #211F33;
+    padding: 15px;
+    text-align: center;
 }
 
 .block-form .search
 {
-	margin: 20px;
-	background: #211F33;
-	padding: 10px;
-	text-align: center;
+    margin:0 20px 0px 20px;
+    background: #211F33;
+    padding: 5px 10px 5px  10px;
+    text-align: center;
 }
 .block-form input, .block-form button
 {
-	width: 100%;
-	box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
 }
-.iconos i{
-    background: gray;
+
+.iconos i
+{
+    background: white;
     padding: 5px;
-    border-radius: 100%;   
+    border-radius: 100%;
+    position: relative;
+    right: 100px;
 }
 
 footer
 {
-color: white;
-background: black;
-padding: 20px;
-text-align: center    
-}
-footer span{
- color:grey;
+    color: white;
+    background: black;
+    padding: 20px;
+    text-align: center    
 }
 
-@media screen and (max-width:920px){
-    .container{
-        width: 100%;
+footer span
+{
+    color:grey;
+}
+
+@media (max-width: 900px)
+{
+    .container
+    {
+        width: 700px;
     }
-    .hero{
-        width: 100%;
+}
+
+
+@media (max-width: 600px)
+{
+    .container
+    {
+        width: 80%;
+    } 
+    .letras
+    {
+        width: 50%;
+        position: relative;
+        left: 25%;
+        padding-bottom: 50px;
+        
+        
     }
-    .imagenes-fila {
-        width: 100%;
-        margin: 0 auto;
-        clear: both;
+    .fondoflor
+    {
+        width: 100%;    
     }
-    .izquierda{
-     width: 50%;   
-    }
-    .fila{
-        height: 
-    }
-    i{
-        display: inline-block;
-    }
-    ul{
-        display: none;
+    .izquierda
+    {
+        width: 100%;    
     }
     .derecha{
+        visibility: hidden;
         display: none;
     }
-    
-    
-}
+    .container i
+    {
+        display: inline-block;
+        float: right;
+        color: white;
+        font-size: 50px;
+        
+    }
+    .container .list-menu
+    {
+        display: none;
+    }
+
+
 
 
